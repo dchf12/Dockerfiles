@@ -8,7 +8,7 @@ RUN go mod download
 
 COPY ./ ./
 
-RUN go build -o /go-article-manager
+RUN go build -o /go-app
 
 EXPOSE 8080
-CMD [ "/go-article-manager" ]
+CMD [ "/go-app" ]
